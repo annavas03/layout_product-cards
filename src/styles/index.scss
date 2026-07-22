@@ -1,3 +1,111 @@
+@import './stars';
+
 body {
   margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+
+  --color-secondary: #616070;
+  --color-main-accent: #060b35;
+  --color-white: #fff;
+  --color-border: #f3f3f3;
+  --color-blue-accent: #00acdc;
+}
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  padding: 32px 16px 16px;
+
+  &__title {
+    margin: 0 0 4px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    color: var(--color-main-accent);
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto 40px;
+    width: 160px;
+    height: 134px;
+  }
+
+  &__product-code {
+    font-size: 10px;
+    margin: 0 0 16px;
+    height: 14px;
+    text-align: start;
+    color: var(--color-secondary);
+  }
+
+  &__reviews {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  &__reviews-text {
+    color: var(--color-main-accent);
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  &__price-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--color-secondary);
+  }
+
+  &__price-value {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 40px;
+    border: 1px solid var(--color-blue-accent);
+    color: var(--color-white);
+    background-color: var(--color-blue-accent);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 16px;
+  }
+
+  &__button:hover {
+    color: var(--color-blue-accent);
+    background-color: var(--color-white);
+  }
+}
+
+.reviews-text {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: var(--color-main-accent);
 }
